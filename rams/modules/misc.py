@@ -62,7 +62,7 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**RAM-UBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**FER-UBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
     await edit_or_reply(event, "**RAM-UBOT Berhasil di matikan!**")
     if HEROKU_APP is not None:
@@ -76,24 +76,13 @@ async def shutdown_bot(event):
 async def restart_bot(rstrt):
     if rstrt.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(rstrt, "**RAM-UBOT Berhasil di Restart**")
+    await edit_or_reply(rstrt, "**FER-UBOT Berhasil di Restart**")
     if BOTLOG_CHATID:
         await rstrt.client.send_message(
             BOTLOG_CHATID, "#RESTART \n" "**RAM-UBOT Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "rams"]
     execle(sys.executable, *args, environ)
-
-
-@ram_cmd(pattern="readme$")
-async def reedme(event):
-    await edit_or_reply(
-        event,
-        "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n⭐ [rams Repo](https://github.com/ramadhani892/RAM-UBOT/blob/RAM-UBOT/README.md)"
-        "\n⭐ [Video Tutorial](https://t.me/Geezprojectt/50)"
-        "\n⭐ [List Variabel Heroku untuk RAM-UBOT](https://t.me/UserbotCh/11)",
-    )
 
 
 @ram_cmd(pattern="repeat (.*)")
@@ -110,24 +99,6 @@ async def repeat(event):
     await edit_or_reply(event, replyText)
 
 
-@ram_cmd(pattern="repo$")
-async def repo_is_here(event):
-    await edit_or_reply(event, "`Sabar Tod....`")
-    await event.client.send_message(
-        event.chat_id, f"╭✠╼━━━━━━━━━━━━━━━\n"
-        f"│  __Welcome Orphan To The hell__\n"
-        f"├✠╼━━━━━━━━━━━━━━━\n"
-        f"│`★ Bot Ver    :` `{BOT_VER}@{branch}`\n"
-        f"│`★ Support    :` [Ram Support](t.me/RamSupportt)\n"
-        f"│`★ Channel    :` [Ch Support](t.me/UserbotCh)\n"
-        f"│`★ Owner Repo :` [merdhani](t.me/merdhni)\n"
-        f"├✠╼━━━━━━━━━━━━━━━━\n"
-        f"│`★ Repository :` [𝙍𝘼𝙈 - 𝙐𝘽𝙊𝙏](https://github.com/ramadhani892/RAM-UBOT)\n"
-        f"╰✠╼━━━━━━━━━━━━━━━━\n"
-        f"  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/ramadhani892/RAM-UBOT/blob/master/LICENSE)", link_preview=False, reply_to=event.reply_to_msg_id
-    )
-    await event.delete()
-
 @ram_cmd(pattern="string$")
 async def string_is_here(event):
     await event.client.send_message(
@@ -137,7 +108,7 @@ async def string_is_here(event):
 
 @ram_cmd(pattern="deploy$")
 async def deploy_(event):
-    await event.client.send_message(event.chat_id, "Deploy ✨RAM-UBOT✨ Disini: [TEKAN...](https://telegram.dog/XTZ_HerokuBot?start=cmFtYWRoYW5pODkyL1JBTS1VQk9UIG1hc3Rlcg)", link_preview=False, reply_to=event.reply_to_msg_id)
+    await event.client.send_message(event.chat_id, "Deploy ✨FER-UBOT✨ Disini: [TEKAN...](https://telegram.dog/XTZ_HerokuBot?start=cmFtYWRoYW5pODkyL1JBTS1VQk9UIG1hc3Rlcg)", link_preview=False, reply_to=event.reply_to_msg_id)
     await event.delete()
 
 @ram_cmd(pattern="raw$")
@@ -263,10 +234,10 @@ async def scam(results, lim):
 async def send(event):
     if not event.is_reply:
         return await edit_or_reply(
-            event, "**REPLY PESAN NYA NGENTOD.**"
+            event, "**REPLY PESAN NYA COK.**"
         )
     chat = event.pattern_match.group(1)
-    xx = await edit_or_reply(event, "**Berhasil Tod, Pesan Telah terkirim!**")
+    xx = await edit_or_reply(event, "**Berhasil COK, Pesan Telah terkirim!**")
     try:
         chat = int(chat)
     except ValueError:
@@ -310,20 +281,6 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository`\
-        \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository RAM-UBOT\
-        \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String RAM-UBOT\
-        \n\n  •  **Syntax :** `{cmd}deploy`\
-        \n  •  **Function : **Untuk menampilkan Link Deploy RAM-UBOT\
-    "
-    }
-)
-
-
-CMD_HELP.update(
-    {
         "readme": f"**Plugin : **`Panduan Menggunakan rams`\
         \n\n  •  **Syntax :** `{cmd}readme`\
         \n  •  **Function : **Menyediakan tautan untuk mengatur rams dan modulnya\
@@ -334,7 +291,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart RAM-UBOT`\
+        "restart": f"**Plugin : **`Restart FER-UBOT`\
         \n\n  •  **Syntax :** `{cmd}restart`\
         \n  •  **Function : **Untuk Merestart rams.\
     "
