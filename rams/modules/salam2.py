@@ -10,12 +10,21 @@ from rams.utils import edit_or_reply, ram_cmd
 #                FROM RAM-UBOT
 # ============================================
 
-@ram_cmd(pattern="p(?: |$)(.*)")
+@ram_cmd(pattern="ukti(?: |$)(.*)")
 async def _(event):
     if event.chat_id in BLACKLIST_CHAT:
         return await edit_or_reply(event, "JANGAN PAKE DISINI SALAM LO HARAM HEHEHE")
     await event.client.send_message(
-        event.chat_id, "**𝐀ssalamu'alaikum gc haram**", reply_to=event.reply_to_msg_id)
+        event.chat_id, "**𝐀ssalamu'alaikum ukhti**", reply_to=event.reply_to_msg_id)
+    await event.delete()
+
+
+@ram_cmd(pattern="akhii(?: |$)(.*)")
+async def _(event):
+    if event.chat_id in BLACKLIST_CHAT:
+        return await edit_or_reply(event, "JANGAN PAKE DISINI SALAM LO HARAM HEHEHE")
+    await event.client.send_message(
+        event.chat_id, "**𝐀ssalamu'alaikum akhii**", reply_to=event.reply_to_msg_id)
     await event.delete()
 
 
@@ -31,7 +40,7 @@ async def _(event):
     if event.chat_id in BLACKLIST_CHAT:
         return await edit_or_reply(event, "JANGAN DISINI DI NGENTOD SALAM LO HARAM!!")
     await event.client.send_message(
-        event.chat_id, "**Wa'alaikumsalam kaum dajal...**", reply_to=event.reply_to_msg_id)
+        event.chat_id, "**Wa'alaikumsalam 🙏**", reply_to=event.reply_to_msg_id)
     await event.delete()
 
 @ram_cmd(pattern="gjn(?: |$)(.*)")
@@ -50,7 +59,7 @@ async def _(event):
 @ram_cmd(pattern="m(?: |$)(.*)")
 async def _(event):
     await event.client.send_message(
-         event.chat_id, "**MEMEK NYA ANAK INIIIII....**")
+         event.chat_id, "**males ngomong**")
     await event.delete()
 
 @ram_cmd(pattern="k(?: |$)(.*)")
