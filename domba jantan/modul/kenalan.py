@@ -21,6 +21,8 @@ async def _(event):
     sleep(1)
     await eor(event, "`I LOVE YOU 💞`")
 # Create by myself @localheart
+
+
 @ram_cmd(pattern='maaf(?: |$)(.*)')
 async def _(event):
     await event.eor("**YAUDAH SAYA MINTA MAAF**")
