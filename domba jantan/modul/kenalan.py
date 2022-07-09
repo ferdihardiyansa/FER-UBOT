@@ -7,9 +7,9 @@ eor = edit_or_reply
 async def _(event):
     await eor(event, f"`Hai Perkenalkan Namaku {owner}`")
     sleep(3)
-    await eor(event, "Salam Kenal Ya semua`")
+    await eor(event, "`Salam Kenal Ya semua`")
     sleep(1)
-    await eor(event, "`Kalian Semua kontol, Ngentot, Anak Yatim, Anak haram, Anak lonte, Ga berguna, Penyembah Tongkat kera sakti. :)`")
+    await eor(event, "`gua cuman mau bilang semangat`")
 # Create by myself @localheart
 
 
