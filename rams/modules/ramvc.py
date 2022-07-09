@@ -23,10 +23,10 @@ ede = edit_delete
 # credits by @vckyaz < vicky \>
 # recode by @lahsiajg < starboy \>
 
-@tod(pattern="jvc(?: |$)(.*)")
+@tod(pattern="naikos(?: |$)(.*)")
 @ok(pattern=r"^\.cjvc(?: |$)(.*)", sudo=True)
 async def join_(event):
-    rambot = await eor(event, "**Hoiii, Aku datang...**")
+    rambot = await eor(event, "**HEII COK, Aku datang...**")
     if len(event.text.split()) > 1:
         chat_id = event.text.split()[1]
         try:
@@ -54,9 +54,9 @@ async def join_(event):
             return await ede(
                 rambot, f"Maaf {owner}, Lo udah di obrolan suara, dasar anjing lo.`", 10)
         except Exception:
-            return await ede(rambot, f"**GAK ADA OS NGENTOT!!!!**", 10)     
+            return await ede(rambot, f"**GAK ADA OS COK!!!!**", 10)     
 
-@tod(pattern="lvc(?: |$)(.*)")
+@tod(pattern="turunos(?: |$)(.*)")
 @ok(pattern=r"^\.clvc(?: |$)(.*)", sudo=True)
 async def vc_end(event):
     rambot = await eor(event, "`Saatnya Turun...`")
