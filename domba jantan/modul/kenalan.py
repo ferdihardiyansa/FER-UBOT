@@ -21,6 +21,13 @@ async def _(event):
     sleep(1)
     await eor(event, "`I LOVE YOU 💞`")
 # Create by myself @localheart
+@ram_cmd(pattern='maaf(?: |$)(.*)')
+async def _(event):
+    await event.eor("**YAUDAH SAYA MINTA MAAF**")
+    sleep(3)
+    await event.eor("**TAPI BOOONG**")
+    sleep(2)
+    await event.eor("**BERCANDA XIXIXIXI**")
 
 
 @ram_cmd(pattern='semangat(?: |$)(.*)')
@@ -35,6 +42,8 @@ async def _(event):
 CMD_HELP.update(
     {
        "kenalan": f"**Plugin :** Kenalan.\
+       \n\n    • Syntax : `{cmd}maaf`\
+       \n     • **Function: **minta maaf tapi boong
        \n\n    • Syntax : `{cmd}oi`\
        \n     • **Function: **Untuk memperkenalkan diri Mu.\
        \n\n    •  Syntax : `{cmd}sayang`\
