@@ -180,11 +180,9 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}sthink`\
         \n  •  **Function : **arts berfikir\
         \n\n  •  **Syntax :** `{cmd}misi` ; 
-
         \n  •  **Function : **permisi.\
         \n\n  •  **Syntax :** `{cmd}sadboy`\
         \n  •  **Function : **ya sadboy coba aja.\
-
         \n\n  •  **Syntax :** `{cmd}crush`\
         \n  •  **Function : **ya coba aja.\
 
