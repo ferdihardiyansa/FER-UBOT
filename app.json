@@ -1,6 +1,6 @@
 {
-  "name": "RAM-UBOT",
-  "description": "[RAM-UBOT] rams KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "FER-UBOT",
+  "description": "[FER-UBOT] FER KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ramadhani892/RAM-UBOT",
+  "repository": "https://github.com/ferdihardiyansa/FER-UBOT",
   "telegram": "https://t.me/Ramadhaniiiiiii1",
   "success_url": "https://t.me/ramaupportt",
   "stack": "container",
