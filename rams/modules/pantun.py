@@ -1,4 +1,3 @@
-
 From time import sleep
 
 From rams import CMD_HANDLER as cmd
@@ -20,6 +19,7 @@ Async def _(event):
     Xx = await edit_or_reply(event, “`**i have crush on you**`”)
     Sleep(3)
     Await xx.edit(“`eh tapi boong😜`”)
+
 
 @ram_cmd(pattern=”misi(?: |$)(.*)”)
 Async def _(event):
