@@ -14,3 +14,27 @@ async def _(event):
     sleep(1)
     await xx.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
 
+CMD_HELP.update(
+    {
+        "arts": f"**Plugin : **`arts`\
+        \n\n  •  **Syntax :** `{cmd}kodok`\
+        \n  •  **Function : **arts Frog.\
+        \n\n  •  **Syntax :** `{cmd}kodog`\
+        \n  •  **Function : **arts frog bundir.\
+        \n\n  •  **Syntax :** `{cmd}dtrump`\
+        \n  •  **Function : **arts donald Trump.\
+        \n\n  •  **Syntax :** `{cmd}scina`\
+        \n  •  **Function : **arts presiden cina.\
+        \n\n  •  **Syntax :** `{cmd}wlcm`\
+        \n  •  **Function : **arts beruang welcome.\
+        \n\n  •  **Syntax :** `{cmd}gta`\
+        \n  •  **Function : **arts si jhonson.\
+        \n\n  •  **Syntax :** `{cmd}sthink`\
+        \n  •  **Function : **arts berfikir\
+        \n\n  •  **Syntax :** `{cmd}misi` ; `{cmd}pantau`\
+        \n  •  **Function : **Arts Beruang kek lagi mantau.\
+        \n\n  •  **Syntax :** `{cmd}sadboy`\
+        \n  •  **Function : **ya sadboy coba aja.\
+    "
+    }
+)
