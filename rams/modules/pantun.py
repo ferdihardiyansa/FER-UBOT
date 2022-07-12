@@ -16,7 +16,7 @@ Async def _(event):
 
 @ram_cmd(pattern=”crush(?: |$)(.*)”)
 Async def _(event):
-    Xx = await edit_or_reply(event, “`**i have crush on you**`”)
+    Xx = await edit_or_reply(event, “**i have crush on you**”)
     Sleep(3)
     Await xx.edit(“`eh tapi boong😜`”)
 
