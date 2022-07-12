@@ -88,7 +88,7 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await ping.client.send_message(
-        ping.chat_id, f"**╰•★★ |Ram Ping| ★★•╯**\n"
+        ping.chat_id, f"**🏀 |fer Ping| 🏀**\n"
                     f"★ **speed:** "
                     f"`%sms` \n"
                     f"★ **Uptime:** "
@@ -122,10 +122,6 @@ async def _(pong):
     await ram.edit("**▁ ▂ ▄ ▅ ▆**")
     await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
     await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
-    await asyncio.sleep(1)
-    await ram.edit("✨")
-    await asyncio.sleep(3)
-    end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.client.send_message(
