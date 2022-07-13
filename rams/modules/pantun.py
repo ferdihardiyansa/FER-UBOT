@@ -6,7 +6,7 @@ from rams import CMD_HELP
 from rams.utils import edit_or_reply, ram_cmd
 
 
-@ram_cmd(pattern="sadboy(?: |$)(.*)")
+@ram_cmd(pattern="tahu(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, "`ikan hiu makan tomat`")
     sleep(2)
