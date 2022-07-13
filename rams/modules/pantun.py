@@ -15,6 +15,13 @@ async def _(event):
     await xx.edit("`JIAKHHHH`")
 
 
+@ram_cmd(pattern="con(?: |$)(.*)")
+async def _(event):
+    xx = await edit_or_reply(event, "`i have crush on you`")
+    sleep(2)
+    await xx.edit("`eh tapi boong`")
+
+
 CMD_HELP.update(
     {
         "Pantun": f"**Plugin : **`pantun`\
@@ -30,8 +37,8 @@ CMD_HELP.update(
         \n  •  **Function : **arts beruang welcome.\
         \n\n  •  **Syntax :** `{cmd}gta`\
         \n  •  **Function : **arts si jhonson.\
-        \n\n  •  **Syntax :** `{cmd}sthink`\
-        \n  •  **Function : **arts berfikir\
+        \n\n  •  **Syntax :** `{cmd}cru`\
+        \n  •  **Function : **confess tapi boong\
         \n\n  •  **Syntax :** `{cmd}misi` ; `{cmd}pantau`\
         \n  •  **Function : **Arts Beruang kek lagi mantau.\
         \n\n  •  **Syntax :** `{cmd}tahu`\
